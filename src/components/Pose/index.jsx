@@ -2,6 +2,6 @@ import './index.css'
 
 export const Pose = (props) => {
     return (
-        <img src={props.imgLocation} />
+        <img className='pose' src={props.imgLocation} />
     )
 }

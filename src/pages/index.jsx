@@ -7,7 +7,7 @@ import { Intro } from '../components/Intro';
 import { Pose } from '../components/Pose'; 
 
 document.querySelector('#root').innerHTML = render(
-  <div className="container">
+  <div id="app" className="app container">
     <Header title="Jogíni" />
     <Intro heading="Vítejte mezi Jogíny" text="`Naše lekce jsou zaměřeny na potřeby klientů, kteří mají odvahu zkusit
          něco nového. Cvičíme v pomalém tempu s podrobným slovním doprovodem.
@@ -15,8 +15,5 @@ document.querySelector('#root').innerHTML = render(
          sobě i ostatním. Krok za krokem objevíte a dostanete pod kontrolu
          svoje tělo, pocity a emoce.`" />
     <Pose imgLocation="yoga-pose.jpg" />
-    <body>
-      <div id="root"></div>
-    </body> 
   </div>
 );
